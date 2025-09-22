@@ -12,14 +12,15 @@
 
 .custom-range-legend {
   margin-top: 10px;
-  width: 240px;   
+  width: 100%;
+  max-width: 300px;   
   text-align: center;
 
 
   .range-bar {
     display: flex;
     height: 14px;
-    width: 300px;
+    width: 100%;
     overflow: hidden;
     margin-bottom: 6px;
     gap: 4px
