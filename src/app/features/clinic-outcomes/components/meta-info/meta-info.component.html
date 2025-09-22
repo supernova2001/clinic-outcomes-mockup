@@ -1,0 +1,17 @@
+<div class="meta-info-container" *ngIf="meta">
+  <div class="patient-info">
+    <span class="patient-count" *ngIf="meta.dateRange">Showing {{ meta.activePatients }} patients from last {{ period }} days of available data from {{ formatDate(meta.dateRange.start) }} - {{ formatDate(meta.dateRange.end) }}
+  </span>
+    <div class="data-criteria">
+    <span class="criteria-text" *ngIf="meta.lastUpdated">
+      Only patients with a minimum of 10 days of SG data are included. Last updated on {{ formatLastUpdated(meta.lastUpdated) }}
+    </span>
+  </div>
+  </div>
+  <div class="print-section">
+    <button class="print-button" (click)="onPrint()">
+    <span class="material-icons">print</span>
+    Print
+  </button>
+  </div>
+</div>

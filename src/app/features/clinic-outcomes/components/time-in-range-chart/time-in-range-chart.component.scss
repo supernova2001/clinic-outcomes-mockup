@@ -1,0 +1,69 @@
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.chart-wrapper {
+  width: 240px;  
+  height: 270px;
+}
+
+.custom-range-legend {
+  margin-top: 10px;
+  width: 240px;   
+  text-align: center;
+
+
+  .range-bar {
+    display: flex;
+    height: 14px;
+    width: 300px;
+    overflow: hidden;
+    margin-bottom: 6px;
+    gap: 4px
+  }
+
+  .range-segment {
+    height: 100%;
+  }
+
+  .range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 4px;
+    span {
+      min-width: 55px;   
+      text-align: left;
+    }
+  }
+}
+.time-in-range-heading {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.time-in-range-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: #544f89;
+}
+
+.info-icon {
+  font-size: 18px;
+  cursor: pointer;
+  color: blue;
+  background-color: #fff; 
+  border: 2px solid blue;
+  border-radius: 50%;
+  padding: 2px;
+}
+.legend-label {
+  font-size: 14px;
+}

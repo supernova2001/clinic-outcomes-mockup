@@ -1,0 +1,35 @@
+<div class="gmi-heading">
+  <span class="chart-title">Glucose Management Indicator (GMI)</span>
+</div>
+
+<div class="gmi-chart-wrapper">
+
+  <!-- Average GMI value from input -->
+  <div class="average-gmi">
+    <span class="label">AVERAGE GMI</span>
+    <span class="value">{{ data?.averageGMI || '6.7' }}%</span>
+  </div>
+
+  <!-- Pie chart -->
+  <div class="chart-container">
+    <canvas baseChart
+            [data]="PieChartData"
+            [options]="PieChartOptions"
+            [type]="PieChartType">
+    </canvas>
+  </div>
+
+  <!-- Custom legend (static ranges) -->
+  <div class="custom-gmi-legend">
+    <div class="gmi-labels">
+      <span *ngFor="let seg of (data?.ranges || defaultLegendData)">{{ seg.label }}</span>
+    </div>
+    <div class="gmi-bar">
+      <div *ngFor="let seg of (data?.ranges || defaultLegendData)"
+           class="gmi-segment"
+           [ngStyle]="{'background': seg.color, 'flex': 1}">
+      </div>
+    </div>
+    <div class="legend-label">GMI (%)</div>
+  </div>
+</div>

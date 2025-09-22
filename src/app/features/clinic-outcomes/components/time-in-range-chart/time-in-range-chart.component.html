@@ -1,0 +1,38 @@
+<div class="time-in-range-heading">
+  <span class="time-in-range-title">Time in range</span>
+  <span class="material-icons info-icon" 
+        matTooltip="Based on standard of care ranges for Time in range.">
+    info
+  </span>
+</div>
+
+<div class="chart-container">
+  <!-- Chart -->
+  <div class="chart-wrapper">
+    <canvas baseChart
+      [data]="barChartData"
+      [options]="barChartOptions"
+      [type]="barChartType">
+    </canvas>
+  </div>
+
+  <div class="custom-range-legend">
+     <div class="range-labels">
+      <span *ngFor="let tick of ticks">{{ tick }}</span>
+    </div>
+    <div class="range-bar">
+      <div 
+      *ngFor="let range of data?.ranges" 
+      class="range-segment"
+      [ngStyle]="{
+      'background': range.pattern 
+        ? 'repeating-linear-gradient(' + (range.label === 'High' ? '-45deg' : '45deg') + ',' 
+          + range.color + ',' + range.color + ' 5px, white 5px, white 7px)' 
+        : range.color,
+      'flex': 1
+      }">
+      </div>
+    </div>
+    <div class="legend-label">mg/dL</div>
+  </div>
+</div>

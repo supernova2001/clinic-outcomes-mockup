@@ -1,0 +1,15 @@
+{
+  "ranges": [
+    { "label": "Very Low", "color": "#ec1930", "value": 3, "pattern": false },
+    { "label": "Low", "color": "#ec1930", "value": 18, "pattern": true },
+    { "label": "In Range", "color": "#9edd5a", "value": 76, "pattern": false },
+    { "label": "High", "color": "#fdc756", "value": 3, "pattern": true },
+    { "label": "Very High", "color": "#ffaf15", "value": 5, "pattern": false }
+  ],
+  "activePatients": 145,
+  "dateRange": {
+    "start": "2025-07-23",
+    "end": "2025-09-21"
+  },
+  "lastUpdated": "2025-09-21T22:56:00.000Z"
+}

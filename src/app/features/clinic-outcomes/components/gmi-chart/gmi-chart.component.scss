@@ -1,0 +1,69 @@
+.gmi-chart-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.chart-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #544f89;
+}
+
+.average-gmi {
+  text-align: center;
+  margin-bottom: 35px;
+
+  .label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+  }
+
+  .value {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+.chart-container {
+  width: 180px;   
+  height: 180px;
+  margin-bottom: 10px;
+}
+
+.custom-gmi-legend {
+  text-align: center;
+  margin-top: 20px;
+
+  .gmi-bar {
+    display: flex;
+    height: 10px;              
+    width: 150px;
+    max-width: 300px;          
+    margin: 0 auto 8px;
+    border-radius: 4px;
+    justify-content: space-between;
+    gap: 4px;                  
+  }
+
+  .gmi-segment {
+    flex: 1;                   
+    border-radius: 2px;        
+  }
+
+  .gmi-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-top: 4px;
+    max-width: 300px;          
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.legend-label {
+  font-size: 14px;
+}

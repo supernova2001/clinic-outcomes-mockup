@@ -1,0 +1,8 @@
+{
+  "averageGMI": 6.7,
+  "ranges": [
+    { "label": "≤7%", "value": 72, "color": "#9edd5a" },
+    { "label": "7-8%", "value": 23, "color": "#f9cf59" },
+    { "label": "≥8%", "value": 5, "color": "#ec1930" }
+  ]
+}
