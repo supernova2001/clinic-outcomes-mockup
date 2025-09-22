@@ -1,4 +1,5 @@
 # Clinic Outcomes Dashboard
+Link to the dashboard: https://clinic-outcomes-mockup.vercel.app/clinic-outcomes 
 
 An Angular 19 application that displays **Clinic Outcomes** for patients using two key metrics:
 
